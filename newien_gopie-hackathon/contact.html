@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>IKKOOK</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <div class="parent">
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">home</a></li>
+                <li><a href="recepten.html">recepten</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1 class="head">contact pagina</h1>
+        </header>
+        <form name="contact" method="POST" data-netlify="true">
+            <fieldset>
+                <legend>Contact formulier</legend>
+                <label>Jouw Naam:<br /> <input type="text" name="name" /></label><br />
+                <label>E-mail:<br /><input type="email" name="email" /></label><br />
+                <label>Tel:<br /> <input type="text" name="telephone" /></label><br />
+                <label>Leeftijd:<br /><input type="text" name="age"></label><br />
+                <label>Geboortedatum:<br /><input type="date" name="birthday"></label><br />
+                <p>Geslacht:<br /><input type="radio" name="gender" value="man" checked="checked" />Man
+                    <input type="radio" name="gender" value="vrouw" />Vrouw
+                </p>
+                <p>
+                    Favoriete cuisine:<br /><input type="checkbox" name="dish" value="frans" />Frans
+                    <input type="checkbox" name="dish" value="italiaans" />Italiaans
+                    <input type="checkbox" name="dish" value="spaans" />Spaans
+                    <input type="checkbox" name="dish" value="arabisch" />Arabish
+                </p>
+                <label for="favcolor">Favoriete kleur van short:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                <p>Biografie:</p>
+                <textarea name="comments" cols="20" rows="10">Hier uw bio graag...</textarea>
+                <p>Upload je laatste recept:</p>
+                <input type="file" name="recepie" /><br />
+                <input type="submit" value="Upload" />
+                <p>url naar je recepten website:</p>
+                <input type="url" name="website" />
+                <input type="submit" value="versturen" /><br /><br /><br />
+                <input type="reset">
+                <input type="submit">
+            </fieldset>
+        </form>
+        <footer>
+            &copy; 2021 IKKOOK
+        </footer>
+    </div>
+</body>
+
+</html>
